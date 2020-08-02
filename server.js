@@ -15,6 +15,4 @@ app.use(routes);
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
-app.listen(PORT, function(){
-    console.log(`Listening on http://localhost:${PORT}`);
-});
+app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
