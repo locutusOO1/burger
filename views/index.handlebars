@@ -6,7 +6,7 @@
         {{#unless devoured}}
             <li class="to-eat">
                 {{burger_name}}
-                <button class="eat" id="{{id}}">Eat Me!</button>
+                <button class="eat-btn" id="{{id}}">Eat Me!</button>
             </li>
         {{/unless}}
     {{/each}}
@@ -29,5 +29,5 @@
         <label for="burger-name">Burger Name:</label>
         <input type="text" id="burger-name" name="burger_name">
     </div>
-    <button type="submit">Add Burger</button>
+    <button id="add-btn" type="submit">Add Burger</button>
 </form>

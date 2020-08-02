@@ -21,7 +21,10 @@ var orm = {
         });
     },
     updateOne: function(table,condition,cb) {
+        console.log(`table: ${table}`);
+        console.log(`table: ${condition}`);
         let qry = `update ${table} set devoured = 1 where ${condition}`;
+        console.log(`qry: ${qry}`);
         connection.query(qry, [table], (err,result) => {
             if (err) throw err;
             console.log(result);
