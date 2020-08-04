@@ -28,7 +28,6 @@
   * MySQL - for DB functionality
   * ORM - for DB templating
   * handlebars - for HTML templating
-  * console.table - for table output
   * Express - for serving
   * Heroku - for site and DB hosting
 
